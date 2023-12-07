@@ -1,4 +1,3 @@
-import './assets/bootstrap-grid.min.css'
 import './assets/index.css'
 
 import { createApp } from 'vue'

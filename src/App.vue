@@ -1,18 +1,19 @@
 <script>
+import NavbarComponent from './components/NavbarComponent.vue'
 import HomeView from './views/HomeView.vue'
+
 export default {
   data() {
-    return{}
+    return {}
   },
   components: {
-    'home-view': HomeView
+    'home-view': HomeView,
+    NavbarComponent
   }
 }
 </script>
 
 <template>
-  <header class="h-"></header>
-  <home-view/>
+  <NavbarComponent />
+  <home-view />
 </template>
-
-<style scoped></style>
