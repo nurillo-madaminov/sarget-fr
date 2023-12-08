@@ -6,6 +6,9 @@ export default {
     extend: {
       colors: {
         primary: 'red'
+      },
+      backgroundImage: {
+        'course-image': "url('https://via.placeholder.com/415x300')",
       }
     },
     screens: {

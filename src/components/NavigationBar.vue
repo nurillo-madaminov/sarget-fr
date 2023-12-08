@@ -1,11 +1,11 @@
 <script>
 export default {
-  name: 'Navbar',
+  name: 'NavigationBar'
 }
 </script>
 <template>
   <header class="header">
-    <div class="max-w-[1140px] mx-auto flex items-center justify-between" id="container">
+    <div class="max-w-7xl mx-auto flex items-center justify-between" id="container">
       <div class="logo">
         <a href="index.html">
           <h1 class="text-3xl">sarget</h1>
@@ -29,17 +29,14 @@ export default {
 }
 
 .logo h1 {
-  color: #fff;
-  text-transform: uppercase;
+  @apply text-white uppercase;
 }
 
 #navbar ul {
-  display: flex;
-  gap: 30px;
+  @apply flex gap-8;
 }
 
 #navbar a {
-  color: #fff;
-  font-size: 20px;
+  @apply text-white text-xl;
 }
 </style>
