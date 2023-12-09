@@ -1,9 +1,9 @@
 <script>
-import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
-import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-import { Pagination, Autoplay } from 'swiper/modules'
+import 'swiper/css/pagination'
+import { Autoplay, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/vue'
 
 export default {
   data() {

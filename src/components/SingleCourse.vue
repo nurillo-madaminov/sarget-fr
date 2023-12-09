@@ -3,7 +3,23 @@ export default {}
 </script>
 
 <template>
-  <span
-    class="block w-[415px] h-[300px] rounded-lg bg-[url('https://via.placeholder.com/415x300')] transition-all duration-500"
-  ></span>
+  <div class="card flex justify-center items-center rounded-lg overflow-hidden relative">
+    <div>
+      <img src="https://via.placeholder.com/415x300" alt="" class="rounded-lg duration-700" />
+    </div>
+    <div
+      class="inner-element w-full h-full opacity-0 absolute duration-500 flex items-center justify-center"
+    >
+      hello world
+    </div>
+  </div>
 </template>
+
+<style scoped>
+.card:hover .inner-element {
+  @apply opacity-70 bg-blue-400;
+}
+.card:hover img {
+  @apply scale-110;
+}
+</style>

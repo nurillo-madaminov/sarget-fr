@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 section {
-    @apply py-24 bg-red-500 flex justify-center items-center;
+  @apply py-24 flex justify-center items-center;
 }
