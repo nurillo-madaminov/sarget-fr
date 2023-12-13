@@ -13,6 +13,7 @@
   "dependencies": {
     "swiper": "^11.0.5",
     "vue": "^3.3.10",
+    "vue-masked-input": "^0.5.2",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {

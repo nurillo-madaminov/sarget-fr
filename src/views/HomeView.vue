@@ -1,12 +1,10 @@
 <script>
 import HeaderCarousel from '@/components/HeaderCarousel.vue'
 import SingleCourse from '@/components/SingleCourse.vue'
-
+import FooterPart from '@/components/FooterPart.vue'
+import TeamSlider from '@/components/TeamSlider.vue'
 export default {
-  data() {
-    return {}
-  },
-  components: { HeaderCarousel, SingleCourse }
+  components: { HeaderCarousel, SingleCourse, FooterPart, TeamSlider }
 }
 </script>
 
@@ -22,17 +20,8 @@ export default {
         </div>
       </div>
     </section>
-    <section id="aboutUs">
-      <div class="max-w-7xl w-full">
-        <div class="flex justify-between items-center bg-red-300">
-          <img
-            src="@/assets/img/Annotation_2023-12-09_173402-removebg-preview.png"
-            alt=""
-            class="mt-14"
-          />
-          <img src="@/assets/img/Annotation_2023-12-09_173531-removebg-preview.png" alt="" />
-        </div>
-      </div>
-    </section>
+
+    <team-slider />
+    <FooterPart />
   </main>
 </template>
