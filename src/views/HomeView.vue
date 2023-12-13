@@ -27,7 +27,7 @@ export default {
           <img src="../assets/img/Annotation_2023-12-09_173531-removebg-preview.png" alt="" class="relative -top-20"/>
         </div>
         <div class="flex justify-center items-center py-36">
-          <div class="w-2/4 flex justify-end self-end relative top-[100px] px-10">
+          <div class="w-2/4 flex justify-end relative top-[100px] px-3">
             <img src="https://via.placeholder.com/450x450" alt="" class="rounded-lg bg-white shadow-[0_0_50px_white]" />
           </div>
           <div
@@ -44,7 +44,7 @@ export default {
             <a href="#" class="px-8 py-3 rounded-3xl text-lg bg-blue-800 text-white">Batafsil</a>
           </div>
         </div>
-        <div class="absolute left-0 -bottom-24 -z-10 ">
+        <div class="absolute left-0 -bottom-32 -z-10 ">
           <img src="https://via.placeholder.com/400x300" alt="" class="rounded-xl">
         </div>
       </div>
