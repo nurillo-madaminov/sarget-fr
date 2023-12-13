@@ -5,3 +5,7 @@
 section {
   @apply py-24 flex justify-center items-center;
 }
+
+.custom-container {
+  @apply max-w-7xl w-full;
+}
