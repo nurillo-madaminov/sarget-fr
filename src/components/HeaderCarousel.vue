@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <div class="hero w-full h-screen">
+  <div class="hero w-full h-screen" id="home">
     <swiper
       :loop="true"
       :pagination="true"

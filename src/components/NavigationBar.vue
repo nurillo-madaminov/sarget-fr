@@ -13,10 +13,10 @@ export default {
       </div>
       <nav id="navbar">
         <ul class="my-4">
-          <li><a href="#">Asosiy</a></li>
-          <li><a href="#">Kurslarimiz</a></li>
-          <li><a href="#">Biz haqimizda</a></li>
-          <li><a href="#">Aloqa</a></li>
+          <li><a href="#home">Asosiy</a></li>
+          <li><a href="#courses">Kurslarimiz</a></li>
+          <li><a href="#about">Biz haqimizda</a></li>
+          <li><a href="#contact">Aloqa</a></li>
         </ul>
       </nav>
     </div>
