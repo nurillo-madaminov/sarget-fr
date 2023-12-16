@@ -12,13 +12,13 @@
     <SwiperSlide>
       <div class="flex flex-col gap-4 py-4">
         <AboutCard
-          img="/src/assets/staffs/sardorbek.jpg"
+          img="sardorbek"
           name="Sardorbek Uzakov"
           work="Asoschi"
           about="Marketolog || SMM Manager || Targetolog || Graphic Designer."
         />
         <AboutCard
-          img="/src/assets/staffs/muhammadjon.jpg"
+          img="muhammadjon"
           name="Adhamjonov Muhammadjon"
           work="O'qituvchi"
           about="Microsoft Office || Graphic Designer."
@@ -28,13 +28,13 @@
     <SwiperSlide>
       <div class="flex flex-col gap-4 py-4">
         <AboutCard
-          img="/src/assets/staffs/muhabbat.jpg"
+          img="muhabbat"
           name="Muhabbat Ermatova "
           work="Manager"
           about="Mobilograf || Copywriter || Content Maker || Graphic Designer."
         />
         <AboutCard
-          img="/src/assets/staffs/hayotbek.jpg"
+          img="hayotbek"
           name="Hayotbek Ruziyev"
           work="Mobilograf"
           about="Reels Maker || Storis maker || Graphic Designer || Web Designer."
@@ -44,13 +44,13 @@
     <SwiperSlide>
       <div class="flex flex-col gap-4 py-4">
         <AboutCard
-          img="/src/assets/staffs/rahmatillo.jpg"
+          img="rahmatillo"
           name="Rahmatullo Qosimov"
           work="O'qituvchi"
           about="Backend: Python || Django."
         />
         <AboutCard
-          img="/src/assets/staffs/nurillo.jpg"
+          img="nurillo"
           name="Nurillo Madaminov"
           work="Dasturchi"
           about="Frontend: HTML || CSS || Bootstrap || Tailwind CSS || SASS || JavaScript || VueJS."
