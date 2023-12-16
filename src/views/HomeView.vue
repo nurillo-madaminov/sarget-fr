@@ -43,7 +43,7 @@ export default {
             />
           </div>
           <div
-            class="w-2/5 px-5 py-10 relative bottom-[100px] bg-white shadow-[0_0_50px_lightgray] rounded-xl border-2 border-lightgray"
+            class="w-1/3 px-5 py-10 relative bg-white shadow-[0_0_50px_lightgray] rounded-xl border-2 border-lightgray"
           >
             <h1 class="text-4xl font-semibold mb-5">Biz haqimizda</h1>
             <p class="text-[17px] text-justify mb-8">
@@ -51,7 +51,9 @@ export default {
               dizaynerlik yo'nalishlarida ta'lim berish boshlandi, so'ngra, tashkilotlardan biri
               Yevropa ittifoqi tomonidan moliyalashtirilgan "Hamroh" nomli loyiha bilan 3 oylik
               shartnoma tuzildi va Andijon shahridagi kam taminlangan oilalar farzandlariga "Web
-              designing" yo'nalishi bo'yicha 3 oy davomida...
+              designing" yo'nalishi bo'yicha 3 oy davomida bepul ta'lim berildi va sertifikatlar
+              bilan taqdirlandi. Sertifikatga ega bo'lgan o'quvchilarga davlat tomonida bepul
+              noutbuklar berildi. Oktyabr oyiga kelib...
             </p>
             <a href="#" class="px-8 py-3 rounded-3xl text-lg bg-blue-800 text-white">Batafsil</a>
           </div>
@@ -72,13 +74,13 @@ export default {
   </main>
 </template>
 
-<!-- bepul ta'lim berildi va sertifikatlar
-              bilan taqdirlandi. Sertifikatga ega bo'lgan o'quvchilarga davlat tomonida bepul
-              noutbuklar berildi. Oktyabr oyiga kelib "Online IT School" nomi "NTA (nano
+<!-- 
+             "Online IT School" nomi "NTA (nano
               texnologiyalar akademiyasi)" nomiga o'zgartirildi. "NTA"ning 11 oylik faoliyati
               davomida "Yoshlar agentligi" bilan shartnoma tuzildi va "Kelajak kasblari" loyihasi
               doirasida 6 oy kam taminlangan, boquvchisi yo'q va temir daftarga kiritilgan oila
               farzandlari o'qitildi va sertifikatlar bilan taqdirlandi. 2023-yilning 1-sentyabrida
               katta re-brending tadbiri o'tkazildi va "NTA" "Sarget IT academy" nomiga
               o'zgartirildi. Darsliklar qayta tuzilib mukammallashtirildi va zamonaviy kasbga
-              yo'naltirilgan sohalar kiritildi.-->
+              yo'naltirilgan sohalar kiritildi.
+-->
