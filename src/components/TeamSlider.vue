@@ -15,7 +15,6 @@ export default {
   components: { AboutCard, Swiper, SwiperSlide }
 }
 </script>
-
 <template>
   <Swiper
     :modules="modules"
@@ -30,13 +29,13 @@ export default {
     <SwiperSlide>
       <div class="flex flex-col gap-4 py-4">
         <AboutCard
-          img="img/sardorbek.jpg"
+          img="/src/assets/img/sardorbek.jpg"
           name="Sardorbek Uzakov"
           work="Asoschi"
           about="Marketolog || SMM Manager || Targetolog || Graphic Designer."
         />
         <AboutCard
-          img="@/assets/staffs/muhammadjon.jpg"
+          img="/src/assets/img/muhammadjon.jpg"
           name="Adhamjonov Muhammadjon"
           work="O'qituvchi"
           about="Microsoft Office || Graphic Designer."
@@ -46,13 +45,13 @@ export default {
     <SwiperSlide>
       <div class="flex flex-col gap-4 py-4">
         <AboutCard
-          img="@/assets/staffs/muhabbat.jpg"
+          img="/src/assets/img/muhabbat.jpg"
           name="Muhabbat Ermatova "
           work="Manager"
           about="Mobilograf || Copywriter || Content Maker || Graphic Designer."
         />
         <AboutCard
-          img="@/assets/staffs/hayotbek.jpg"
+          img="/src/assets/img/hayotbek.jpg"
           name="Hayotbek Ruziyev"
           work="Mobilograf"
           about="Reels Maker || Storis maker || Graphic Designer || Web Designer."
@@ -62,13 +61,13 @@ export default {
     <SwiperSlide>
       <div class="flex flex-col gap-4 py-4">
         <AboutCard
-          img="@/assets/staffs/rahmatillo.jpg"
+          img="/src/assets/img/rahmatillo.jpg"
           name="Rahmatullo Qosimov"
           work="O'qituvchi"
           about="Backend: Python || Django."
         />
         <AboutCard
-          img="@/assets/staffs/nurillo.jpg"
+          img="/src/assets/img/nurillo.jpg"
           name="Nurillo Madaminov"
           work="Dasturchi"
           about="Frontend: HTML || CSS || Bootstrap || Tailwind CSS || SASS || JavaScript || VueJS."

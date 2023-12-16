@@ -1,6 +1,17 @@
+<script>
+import InfoCard from './InfoCard.vue'
+
+export default {
+  components: { InfoCard }
+}
+</script>
+
 <template>
   <footer class="bg-[#17222B] py-24" id="contact">
     <div class="max-w-7xl mx-auto">
+      <div>
+        <InfoCard/>
+      </div>
       <div class="w-full p-20 bg-[#263039] flex justify-between rounded-3xl relative">
         <div class="flex flex-wrap flex-col w-2/4">
           <h1 class="text-5xl text-white font-semibold">
