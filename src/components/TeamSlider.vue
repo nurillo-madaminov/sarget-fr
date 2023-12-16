@@ -1,3 +1,21 @@
+<script>
+import AboutCard from '@/components/AboutCard.vue'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import { Autoplay } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+export default {
+  data() {
+    return {
+      modules: [Autoplay]
+    }
+  },
+  components: { AboutCard, Swiper, SwiperSlide }
+}
+</script>
+
 <template>
   <Swiper
     :modules="modules"
@@ -12,7 +30,7 @@
     <SwiperSlide>
       <div class="flex flex-col gap-4 py-4">
         <AboutCard
-          img="@/assets/staffs/sardorbek.jpg"
+          img="img/sardorbek.jpg"
           name="Sardorbek Uzakov"
           work="Asoschi"
           about="Marketolog || SMM Manager || Targetolog || Graphic Designer."
@@ -59,21 +77,3 @@
     </SwiperSlide>
   </Swiper>
 </template>
-
-<script>
-import AboutCard from '@/components/AboutCard.vue'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import { Autoplay } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-
-export default {
-  data() {
-    return {
-      modules: [Autoplay]
-    }
-  },
-  components: { AboutCard, Swiper, SwiperSlide }
-}
-</script>
