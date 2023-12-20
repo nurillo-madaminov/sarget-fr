@@ -1,11 +1,13 @@
 <script>
-export default {}
+export default {
+  props: ["img"]
+}
 </script>
 
 <template>
   <div class="card flex justify-center items-center rounded-lg overflow-hidden relative">
     <div>
-      <img src="https://via.placeholder.com/415x300" alt="" class="rounded-lg duration-700" />
+      <img :src="img" alt="" class="rounded-lg duration-700" />
     </div>
     <div
       class="inner-element w-full h-full opacity-0 absolute duration-500 flex items-center justify-center"

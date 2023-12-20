@@ -1,18 +1,11 @@
 <script>
-import InfoCard from './InfoCard.vue'
-
-export default {
-  components: { InfoCard }
-}
+export default {}
 </script>
 
 <template>
   <footer class="bg-[#17222B] py-24" id="contact">
     <div class="max-w-7xl mx-auto">
-      <div>
-        <InfoCard/>
-      </div>
-      <div class="w-full p-20 bg-[#263039] flex justify-between rounded-3xl relative">
+      <div class="w-full p-20 bg-[#263039] flex justify-between items-center rounded-3xl relative">
         <div class="flex flex-wrap flex-col w-2/4">
           <h1 class="text-5xl text-white font-semibold">
             Soha tanlashdagi birinchi yordamni beramiz
@@ -22,7 +15,7 @@ export default {
             aloqaga chiqamiz
           </p>
         </div>
-        <div class="w-2/4 flex justify-center absolute -top-7 right-0 scale-110">
+        <div class="w-2/4 flex justify-center absolute right-0 scale-110">
           <div class="bg-gray-800 p-10 rounded-2xl">
             <form>
               <div class="flex flex-col items-start gap-5">

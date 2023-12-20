@@ -3,8 +3,7 @@ export default {
   props: ['img', 'name', 'work', 'about'],
   methods: {
     getImageUrl(name) {
-      console.log(name)
-      return new URL(`../assets/staffs/${name}.jpg`, import.meta.url).href
+      return new URL(`../assets/img/${name}.jpg`, import.meta.url).href
     }
   }
 }
@@ -14,7 +13,7 @@ export default {
   <div class="card">
     <div class="flex gap-4 row">
       <div class="w-[200px] h-[200px] overflow-hidden shrink-0 rounded-2xl">
-        <img :src="getImageUrl(img)" alt="" class="w-full border border-gray-400" />
+        <img :src="getImageUrl(img)" alt="" class="w-full rounded-3xl border border-gray-400" />
       </div>
       <div class="flex flex-col gap-3 col">
         <h1 class="text-2xl tracking-widest uppercase">{{ name }}</h1>

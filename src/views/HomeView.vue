@@ -2,21 +2,25 @@
 import HeaderCarousel from '@/components/HeaderCarousel.vue'
 import SingleCourse from '@/components/SingleCourse.vue'
 import TeamSlider from '@/components/TeamSlider.vue'
+import InfoCard from '@/components/InfoCard.vue'
 
 export default {
-  components: { HeaderCarousel, SingleCourse, TeamSlider }
+  components: { HeaderCarousel, SingleCourse, TeamSlider, InfoCard }
 }
 </script>
 
 <template>
-  <main>
+  <main class="sm:bg-red-300 md:bg-blue-300 lg:bg-green-300 xl:bg-violet-300">
     <HeaderCarousel />
     <section id="courses" class="bg-[#272C31]">
       <div class="max-w-7xl w-full">
-        <div class="flex flex-wrap justify-center gap-3">
-          <div v-for="x in 6" :key="x">
-            <SingleCourse />
-          </div>
+        <div class="flex flex-wrap justify-center gap-5">
+          <SingleCourse img="https://picsum.photos/410/300" />
+          <SingleCourse img="https://picsum.photos/410/300" />
+          <SingleCourse img="https://picsum.photos/410/300" />
+          <SingleCourse img="https://picsum.photos/410/300" />
+          <SingleCourse img="https://picsum.photos/410/300" />
+          <SingleCourse img="https://picsum.photos/410/300" />
         </div>
       </div>
     </section>
@@ -31,19 +35,23 @@ export default {
           <img
             src="../assets/img/Annotation_2023-12-09_173531-removebg-preview.png"
             alt=""
-            class="relative -top-20"
+            class="relative -top-20 lg:top-[200px] transition-all duration-200"
           />
         </div>
-        <div class="flex justify-center items-center py-36">
-          <div class="w-2/4 flex justify-end relative top-[100px] px-3">
+        <div
+          class="flex justify-center items-center py-36 lg:flex-col md:px-6 transition-all duration-200"
+        >
+          <div
+            class="w-2/4 md:w-full flex justify-end md:justify-center relative top-[100px] lg:top-14 transition-all duration-200 md:top-2 px-3"
+          >
             <img
-              src="https://via.placeholder.com/450x450"
+              src="https://picsum.photos/500/500"
               alt=""
-              class="rounded-lg bg-white shadow-[0_0_50px_white]"
+              class="rounded-lg bg-white shadow-[-5px_5px_40px_lightgray]"
             />
           </div>
           <div
-            class="w-1/3 px-5 py-10 relative bg-white shadow-[0_0_50px_lightgray] rounded-xl border-2 border-lightgray"
+            class="w-1/3 lg:w-2/3 md:w-full px-5 py-10 relative bg-white rounded-xl border-2 border-lightgray transition-all duration-200"
           >
             <h1 class="text-4xl font-semibold mb-5">Biz haqimizda</h1>
             <p class="text-[17px] text-justify mb-8">
@@ -59,7 +67,7 @@ export default {
           </div>
         </div>
         <div class="absolute left-0 -bottom-32 -z-10">
-          <img src="https://via.placeholder.com/400x300" alt="" class="rounded-xl" />
+          <img src="https://picsum.photos/400/300" alt="" class="rounded-xl" />
         </div>
       </div>
     </section>
@@ -69,6 +77,26 @@ export default {
       </div>
       <div class="overflow-auto custom-container">
         <team-slider />
+      </div>
+    </section>
+    <section
+      class="bg-white bg-gradient-to-t from-[#17222B] from-60% via-gray-50 via-10% to-transparent py-0"
+    >
+      <div class="custom-container">
+        <div class="flex gap-5 justify-center mb-10 flex-wrap">
+          <InfoCard
+            icon="location-dot"
+            title="our main office"
+            text="Andijon shahar Leniniskiy Istiqlol  27"
+          />
+          <InfoCard
+            icon="phone"
+            title="phone number"
+            text="+998 88 833 3434 || +998 33 688 10 00"
+          />
+          <InfoCard icon="fax" title="tax" text="lorem ipsum dolor sit" />
+          <InfoCard icon="envelope" title="email" text="developernurillo@gmail.com" />
+        </div>
       </div>
     </section>
   </main>
