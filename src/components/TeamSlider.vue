@@ -1,7 +1,30 @@
+<script>
+import AboutCard from '@/components/AboutCard.vue'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import { Autoplay } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+export default {
+  data() {
+    return {
+      modules: [Autoplay],
+      slidesPerView: 2,
+    }
+  },
+  mounted() {
+    if(innerWidth < 776) this.slidesPerView = 1;
+    else this.slidesPerView = 2
+  },
+  components: { AboutCard, Swiper, SwiperSlide }
+}
+</script>
+
 <template>
   <Swiper
     :modules="modules"
-    :slides-per-view="2"
+    :slides-per-view="this.slidesPerView"
     :slides-offset-before="20"
     :slides-offset-after="20"
     :space-between="40"
@@ -59,22 +82,3 @@
     </SwiperSlide>
   </Swiper>
 </template>
-
-<script>
-import AboutCard from '@/components/AboutCard.vue'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import { Autoplay } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-
-export default {
-  data() {
-    return {
-      modules: [Autoplay]
-    }
-  },
-  components: { AboutCard, Swiper, SwiperSlide }
-}
-</script>
-

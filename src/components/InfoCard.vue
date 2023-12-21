@@ -12,9 +12,11 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col justify-center items-center custom-width h-[300px] rounded-xl bg-white shadow-[0_0_40px_lightgray]">
+  <div
+    class="flex flex-col justify-center items-center custom-width h-[300px] rounded-xl bg-white shadow-[0_0_40px_lightgray]"
+  >
     <font-awesome-icon :icon="['fas', icon]" class="text-[#26499f] text-5xl mb-5" />
-    <h1 class="uppercase font-semibold text-lg mb-4">{{title}}</h1>
+    <h1 class="uppercase font-semibold text-lg mb-4">{{ title }}</h1>
     <p>{{ text }}</p>
   </div>
 </template>

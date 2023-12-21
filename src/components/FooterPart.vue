@@ -5,17 +5,17 @@ export default {}
 <template>
   <footer class="bg-[#17222B] py-24" id="contact">
     <div class="max-w-7xl mx-auto">
-      <div class="w-full p-20 bg-[#263039] flex justify-between items-center rounded-3xl relative">
-        <div class="flex flex-wrap flex-col w-2/4">
-          <h1 class="text-5xl text-white font-semibold">
+      <div class="w-full p-20 lg:bg-transparent bg-[#263039] flex justify-between items-center rounded-3xl relative lg:flex-col">
+        <div class="lg:w-full w-2/4 flex flex-wrap flex-col lg:text-center">
+          <h1 class="text-5xl md:text-4xl text-white font-semibold">
             Soha tanlashdagi birinchi yordamni beramiz
           </h1>
-          <p class="text- text-gray-400 mt-5">
+          <p class="text-gray-400 mt-5 ">
             Ma'lumotlaringizni qoldiring va sizga tez fursatda <br />
             aloqaga chiqamiz
           </p>
         </div>
-        <div class="w-2/4 flex justify-center absolute right-0 scale-110">
+        <div class="lg:w-full w-2/4 flex justify-center absolute lg:relative right-0 scale-110 lg:scale-100 lg:mt-10">
           <div class="bg-gray-800 p-10 rounded-2xl">
             <form>
               <div class="flex flex-col items-start gap-5">
