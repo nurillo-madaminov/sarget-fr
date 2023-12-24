@@ -10,10 +10,12 @@ export default {
 </script>
 
 <template>
-  <div class="card">
-    <div class="flex gap-4 row">
-      <div class="w-[200px] h-[200px] overflow-hidden shrink-0 rounded-2xl">
-        <img :src="getImageUrl(img)" alt="" class="w-full rounded-3xl border border-gray-400" />
+  <div>
+    <div class="flex gap-4 sm:flex-col">
+      <div
+        class="w-[200px] sm:w-[150px] h-[200px] sm:h-[150px] overflow-hidden shrink-0 rounded-2xl"
+      >
+        <img :src="getImageUrl(img)" alt="" class="w-full border border-gray-400 rounded-3xl" />
       </div>
       <div class="flex flex-col gap-3 col">
         <h1 class="text-2xl tracking-widest uppercase">{{ name }}</h1>

@@ -10,11 +10,11 @@ export default {
   data() {
     return {
       modules: [Autoplay],
-      slidesPerView: 2,
+      slidesPerView: 2
     }
   },
   mounted() {
-    if(innerWidth < 776) this.slidesPerView = 1;
+    if (innerWidth < 776) this.slidesPerView = 1
     else this.slidesPerView = 2
   },
   components: { AboutCard, Swiper, SwiperSlide }
@@ -30,7 +30,6 @@ export default {
     :space-between="40"
     :loop="true"
     :autoplay="true"
-    class="bg-white"
   >
     <SwiperSlide>
       <div class="flex flex-col gap-4 py-4">

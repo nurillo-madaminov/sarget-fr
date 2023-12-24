@@ -10,10 +10,10 @@ export default {
 </script>
 
 <template>
-  <main class="sm:bg-red-300 md:bg-blue-300 lg:bg-green-300 xl:bg-violet-300">
+  <main class="">
     <HeaderCarousel />
     <section id="courses" class="bg-[#272C31]">
-      <div class="max-w-7xl w-full">
+      <div class="w-full max-w-7xl">
         <div class="flex flex-wrap justify-center gap-5">
           <SingleCourse img="https://picsum.photos/410/300" />
           <SingleCourse img="https://picsum.photos/410/300" />
@@ -25,8 +25,8 @@ export default {
       </div>
     </section>
     <section id="about">
-      <div class="custom-container relative">
-        <div class="w-full flex justify-between absolute self-start">
+      <div class="relative custom-container">
+        <div class="absolute flex self-start justify-between w-full">
           <img
             src="../assets/img/Annotation_2023-12-09_173402-removebg-preview.png"
             alt=""
@@ -39,7 +39,7 @@ export default {
           />
         </div>
         <div
-          class="flex justify-center items-center py-36 lg:flex-col md:px-6 transition-all duration-200"
+          class="flex items-center justify-center transition-all duration-200 py-36 lg:flex-col md:px-6"
         >
           <div
             class="w-2/4 md:w-full flex justify-end md:justify-center relative top-[100px] lg:top-14 transition-all duration-200 md:top-2 px-3"
@@ -51,9 +51,9 @@ export default {
             />
           </div>
           <div
-            class="w-1/3 lg:w-2/3 md:w-full px-5 py-10 relative bg-white rounded-xl border-2 border-lightgray transition-all duration-200"
+            class="relative w-1/3 px-5 py-10 transition-all duration-200 bg-white border-2 lg:w-2/3 md:w-full rounded-xl border-lightgray"
           >
-            <h1 class="text-4xl font-semibold mb-5">Biz haqimizda</h1>
+            <h1 class="mb-5 text-4xl font-semibold">Biz haqimizda</h1>
             <p class="text-[17px] text-justify mb-8">
               2022-yilning 1-aprelida "Online IT School"ga asos solindi. Dasturlash va grafik
               dizaynerlik yo'nalishlarida ta'lim berish boshlandi, so'ngra, tashkilotlardan biri
@@ -63,7 +63,7 @@ export default {
               bilan taqdirlandi. Sertifikatga ega bo'lgan o'quvchilarga davlat tomonida bepul
               noutbuklar berildi. Oktyabr oyiga kelib...
             </p>
-            <a href="#" class="px-8 py-3 rounded-3xl text-lg bg-blue-800 text-white">Batafsil</a>
+            <a href="#" class="px-8 py-3 text-lg text-white bg-blue-800 rounded-3xl">Batafsil</a>
           </div>
         </div>
         <div class="absolute left-0 -bottom-32 -z-10">
@@ -83,7 +83,7 @@ export default {
       class="bg-white bg-gradient-to-t from-[#17222B] from-60% via-gray-50 via-10% to-transparent py-0"
     >
       <div class="custom-container">
-        <div class="flex gap-5 justify-center mb-10 flex-wrap">
+        <div class="flex flex-wrap justify-center gap-5 mb-10">
           <InfoCard
             icon="location-dot"
             title="our main office"
