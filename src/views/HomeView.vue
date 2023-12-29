@@ -10,17 +10,17 @@ export default {
 </script>
 
 <template>
-  <main class="">
+  <main>
     <HeaderCarousel />
     <section id="courses" class="bg-[#272C31]">
       <div class="w-full max-w-7xl">
-        <div class="flex flex-wrap justify-center gap-5">
-          <SingleCourse img="https://picsum.photos/410/300" />
-          <SingleCourse img="https://picsum.photos/410/300" />
-          <SingleCourse img="https://picsum.photos/410/300" />
-          <SingleCourse img="https://picsum.photos/410/300" />
-          <SingleCourse img="https://picsum.photos/410/300" />
-          <SingleCourse img="https://picsum.photos/410/300" />
+        <h1 class="text-4xl font-semibold text-white text-center -mt-10 mb-10 font-[Getvoip]">
+          Kurslarimiz
+        </h1>
+        <div class="flex flex-wrap justify-center gap-3">
+          <SingleCourse img="programming" />
+          <SingleCourse img="videography" />
+          <SingleCourse img="marketing" />
         </div>
       </div>
     </section>
@@ -29,12 +29,12 @@ export default {
         <div class="absolute flex self-start justify-between w-full">
           <img
             src="../assets/img/Annotation_2023-12-09_173402-removebg-preview.png"
-            alt=""
+            alt="image"
             class="relative top-16"
           />
           <img
             src="../assets/img/Annotation_2023-12-09_173531-removebg-preview.png"
-            alt=""
+            alt="image"
             class="relative -top-20 lg:top-[200px] transition-all duration-200"
           />
         </div>
@@ -46,14 +46,14 @@ export default {
           >
             <img
               src="https://picsum.photos/500/500"
-              alt=""
+              alt="image"
               class="rounded-lg bg-white shadow-[-5px_5px_40px_lightgray]"
             />
           </div>
           <div
             class="relative w-1/3 px-5 py-10 transition-all duration-200 bg-white border-2 lg:w-2/3 md:w-full rounded-xl border-lightgray"
           >
-            <h1 class="mb-5 text-4xl font-semibold">Biz haqimizda</h1>
+            <h1 class="mb-5 text-3xl font-semibold font-[Getvoip]">Biz haqimizda</h1>
             <p class="text-[17px] text-justify mb-8">
               2022-yilning 1-aprelida "Online IT School"ga asos solindi. Dasturlash va grafik
               dizaynerlik yo'nalishlarida ta'lim berish boshlandi, so'ngra, tashkilotlardan biri
@@ -63,17 +63,19 @@ export default {
               bilan taqdirlandi. Sertifikatga ega bo'lgan o'quvchilarga davlat tomonida bepul
               noutbuklar berildi. Oktyabr oyiga kelib...
             </p>
-            <a href="#" class="px-8 py-3 text-lg text-white bg-blue-800 rounded-3xl">Batafsil</a>
+            <a href="#" class="px-8 py-3 text-xl tracking-wide text-white bg-blue-800 rounded-3xl"
+              >Batafsil</a
+            >
           </div>
         </div>
         <div class="absolute left-0 -bottom-32 -z-10">
-          <img src="https://picsum.photos/400/300" alt="" class="rounded-xl" />
+          <img src="https://picsum.photos/400/300" alt="image" class="rounded-xl" />
         </div>
       </div>
     </section>
     <section id="team" class="flex-col gap-10">
       <div class="header">
-        <h1 class="text-4xl font-semibold">Our perfect team</h1>
+        <h1 class="text-4xl font-semibold font-[arial]">Bizning <span class="">j</span>amoa</h1>
       </div>
       <div class="overflow-auto custom-container">
         <team-slider />
@@ -94,7 +96,7 @@ export default {
             title="phone number"
             text="+998 88 833 3434 || +998 33 688 10 00"
           />
-          <InfoCard icon="fax" title="tax" text="lorem ipsum dolor sit" />
+          <InfoCard icon="fax" title="fax" text="lorem ipsum dolor sit" />
           <InfoCard icon="envelope" title="email" text="developernurillo@gmail.com" />
         </div>
       </div>

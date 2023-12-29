@@ -25,7 +25,7 @@ export default {
       <div class="md:flex md:justify-between md:w-full">
         <div class="logo flex items-center">
           <a href="index.html">
-            <h1 class="text-3xl text-white uppercase">sarget</h1>
+            <h1 class="text-3xl text-white uppercase font-[Getvoip]">sarget</h1>
           </a>
         </div>
         <button class="hidden md:inline-block p-4" @click="openNav">

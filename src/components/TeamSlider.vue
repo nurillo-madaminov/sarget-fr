@@ -41,7 +41,7 @@ export default {
         />
         <AboutCard
           img="muhammadjon"
-          name="Adhamjonov Muhammadjon"
+          name="Muhammadjon Adhamjonov"
           work="O'qituvchi"
           about="Microsoft Office || Graphic Designer."
         />

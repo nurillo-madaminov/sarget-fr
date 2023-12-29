@@ -1,16 +1,23 @@
 <script>
 export default {
-  props: ["img"]
+  props: ['img'],
+  methods: {
+    getImageUrl(name) {
+      return new URL(`../assets/img/courses/${name}.jpg`, import.meta.url).href
+    }
+  }
 }
 </script>
 
 <template>
-  <div class="card flex justify-center items-center rounded-lg overflow-hidden relative">
+  <div
+    class="card flex justify-center items-center rounded-lg overflow-hidden relative w-[calc(100%/3-10px)]"
+  >
     <div>
-      <img :src="img" alt="" class="rounded-lg duration-700" />
+      <img :src="getImageUrl(img)" alt="image" class="rounded-lg duration-700" />
     </div>
     <div
-      class="inner-element w-full h-full opacity-0 absolute duration-500 flex items-center justify-center"
+      class="inner-element w-full h-full opacity-0 absolute duration-500 flex items-center justify-center text-white"
     >
       hello world
     </div>
@@ -19,7 +26,7 @@ export default {
 
 <style scoped>
 .card:hover .inner-element {
-  @apply opacity-70 bg-blue-400;
+  @apply opacity-70 bg-gray-800;
 }
 .card:hover img {
   @apply scale-110;

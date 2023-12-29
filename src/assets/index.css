@@ -13,3 +13,8 @@ section {
 .custom-container {
   @apply max-w-7xl w-full;
 }
+
+@font-face {
+  font-family: "Getvoip";
+  src: url("../assets/fonts/getvoip/GetVoIP Grotesque.ttf");
+}

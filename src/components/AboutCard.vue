@@ -15,10 +15,10 @@ export default {
       <div
         class="w-[200px] sm:w-[150px] h-[200px] sm:h-[150px] overflow-hidden shrink-0 rounded-2xl"
       >
-        <img :src="getImageUrl(img)" alt="" class="w-full border border-gray-400 rounded-3xl" />
+        <img :src="getImageUrl(img)" alt="image" class="w-full border border-gray-400 rounded-3xl" />
       </div>
       <div class="flex flex-col gap-3 col">
-        <h1 class="text-2xl tracking-widest uppercase">{{ name }}</h1>
+        <h1 class="text-2xl tracking-wid text-gray-700 uppercase font-[Getvoip]">{{ name }}</h1>
         <h3 class="text-xl font-bold text-blue-800">{{ work }}</h3>
         <p class="text-lg text-neutral-600">{{ about }}</p>
         <div class="flex gap-2">
