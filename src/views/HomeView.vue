@@ -26,7 +26,7 @@ export default {
     </section>
     <section id="about">
       <div class="relative custom-container">
-        <div class="absolute flex self-start justify-between w-full">
+        <div class="absolute flex self-start justify-between w-full sm:hidden">
           <img
             src="../assets/img/Annotation_2023-12-09_173402-removebg-preview.png"
             alt="image"
