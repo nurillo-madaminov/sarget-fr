@@ -13,11 +13,14 @@ export default {
       slidesPerView: 2
     }
   },
+  components: { AboutCard, Swiper, SwiperSlide },
   mounted() {
-    if (innerWidth < 776) this.slidesPerView = 1
-    else this.slidesPerView = 2
-  },
-  components: { AboutCard, Swiper, SwiperSlide }
+    window.onresize = () => {
+      innerWidth < 1279 ? (this.slidesPerView = 1) : (this.slidesPerView = 2)
+    }
+    // if (innerWidth < 776) this.slidesPerView = 1
+    // else this.slidesPerView = 2    47...79
+  }
 }
 </script>
 
@@ -32,7 +35,7 @@ export default {
     :autoplay="true"
   >
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4">
+      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
         <AboutCard
           img="sardorbek"
           name="Sardorbek Uzakov"
@@ -48,7 +51,7 @@ export default {
       </div>
     </SwiperSlide>
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4">
+      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
         <AboutCard
           img="muhabbat"
           name="Muhabbat Ermatova "
@@ -64,7 +67,7 @@ export default {
       </div>
     </SwiperSlide>
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4">
+      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
         <AboutCard
           img="rahmatillo"
           name="Rahmatullo Qosimov"
@@ -81,3 +84,5 @@ export default {
     </SwiperSlide>
   </Swiper>
 </template>
+
+<style scoped></style>
