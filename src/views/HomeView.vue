@@ -17,7 +17,7 @@ export default {
         <h1 class="text-4xl font-semibold text-white text-center -mt-10 mb-10 font-[Getvoip]">
           Kurslarimiz
         </h1>
-        <div class="flex flex-wrap justify-center gap-3">
+        <div class="flex flex-wrap justify-center gap-3 lg:flex-col lg:items-center">
           <SingleCourse img="programming" />
           <SingleCourse img="videography" />
           <SingleCourse img="marketing" />
