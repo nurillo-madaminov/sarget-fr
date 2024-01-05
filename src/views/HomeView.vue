@@ -14,7 +14,9 @@ export default {
     <HeaderCarousel />
     <section id="courses" class="bg-[#272C31]">
       <div class="w-full max-w-7xl">
-        <h1 class="text-4xl font-semibold text-white text-center -mt-10 mb-10 font-[Getvoip]">
+        <h1
+          class="text-4xl font-semibold text-white text-center -mt-10 mb-10 font-[Getvoip] sm:text-2xl"
+        >
           Kurslarimiz
         </h1>
         <div class="flex flex-wrap justify-center gap-3 lg:flex-col lg:items-center">
@@ -68,7 +70,7 @@ export default {
             >
           </div>
         </div>
-        <div class="absolute left-0 -bottom-32 -z-10">
+        <div class="absolute left-0 -bottom-32 -z-10 md:hidden">
           <img src="https://picsum.photos/400/300" alt="image" class="rounded-xl" />
         </div>
       </div>

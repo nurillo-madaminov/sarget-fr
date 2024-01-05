@@ -3,20 +3,20 @@ export default {}
 </script>
 
 <template>
-  <footer class="bg-[#17222B] py-24" id="contact">
+  <footer class="bg-[#17222B] py-24 sm:p-0" id="contact">
     <div class="max-w-7xl mx-auto">
-      <div class="w-full p-20 lg:bg-transparent bg-[#263039] flex justify-between items-center rounded-3xl relative lg:flex-col">
+      <div class="w-full py-20 px-16 sm:p-10 lg:bg-transparent bg-[#263039] xl:bg-transparent flex justify-between items-center rounded-3xl relative lg:flex-col">
         <div class="lg:w-full w-2/4 flex flex-wrap flex-col lg:text-center">
-          <h1 class="text-5xl md:text-4xl text-white font-semibold">
+          <h1 class="text-5xl lg:text-3xl sm:text-[25px] text-white font-semibold">
             Soha tanlashdagi birinchi yordamni beramiz
           </h1>
-          <p class="text-gray-400 mt-5 ">
+          <p class="text-gray-400 mt-5 sm:text-sm">
             Ma'lumotlaringizni qoldiring va sizga tez fursatda <br />
             aloqaga chiqamiz
           </p>
         </div>
-        <div class="lg:w-full w-2/4 flex justify-center absolute lg:relative right-0 scale-110 lg:scale-100 lg:mt-10">
-          <div class="bg-gray-800 p-10 rounded-2xl">
+        <div class="w-2/4 flex justify-center absolute lg:relative right-0 scale-110 md:scale-[0.80] xl:scale-[0.90]">
+          <div class="bg-gray-800 p-10 rounded-2xl md:bg-transparent">
             <form>
               <div class="flex flex-col items-start gap-5">
                 <div>

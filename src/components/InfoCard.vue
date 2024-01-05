@@ -13,16 +13,11 @@ export default {
 
 <template>
   <div
-    class="flex shrink-0 flex-col justify-center items-center custom-width h-[300px] rounded-xl bg-white shadow-[0_0_40px_lightgray]"
+    class="flex shrink-0 flex-col justify-center items-center w-[305px] h-[300px] p-3 rounded-xl bg-white shadow-[0_0_40px_lightgray] sm:w-[250px] sm:h-[250px]"
   >
     <font-awesome-icon :icon="['fas', icon]" class="text-[#26499f] text-5xl mb-5" />
     <h1 class="mb-4 text-lg font-semibold uppercase">{{ title }}</h1>
-    <p>{{ text }}</p>
+    <p class="text-center">{{ text }}</p>
   </div>
 </template>
 
-<style scoped>
-.custom-width {
-  width: 305px;
-}
-</style>
