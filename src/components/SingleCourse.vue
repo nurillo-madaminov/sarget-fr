@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div
-    class="card flex justify-center items-center rounded-lg overflow-hidden relative w-[calc(100%/3-10px)] sm:w-[300px] lg:w-[400px]"
+    class="card flex justify-center items-center rounded-lg overflow-hidden relative w-[calc(100%/3-50px)] sm:w-2/3 lg:w-[400px]"
   >
     <div>
       <img :src="getImageUrl(img)" alt="image" class="rounded-lg duration-700" />

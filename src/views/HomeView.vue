@@ -15,11 +15,11 @@ export default {
     <section id="courses" class="bg-[#272C31]">
       <div class="w-full max-w-7xl">
         <h1
-          class="text-4xl font-semibold text-white text-center -mt-10 mb-10 font-[Getvoip] sm:text-2xl"
+          class="text-4xl font-semibold text-white text-center mb-10 font-[Getvoip] sm:text-2xl"
         >
           Kurslarimiz
         </h1>
-        <div class="flex flex-wrap justify-center gap-3 lg:flex-col lg:items-center">
+        <div class="flex flex-wrap justify-center gap-5 lg:flex-col lg:items-center">
           <SingleCourse img="programming" />
           <SingleCourse img="videography" />
           <SingleCourse img="marketing" />

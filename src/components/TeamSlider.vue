@@ -50,22 +50,7 @@ export default {
         />
       </div>
     </SwiperSlide>
-    <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
-        <AboutCard
-          img="muhabbat"
-          name="Muhabbat Ermatova "
-          work="Manager"
-          about="Mobilograf || Copywriter || Content Maker || Graphic Designer."
-        />
-        <AboutCard
-          img="hayotbek"
-          name="Hayotbek Ruziyev"
-          work="Mobilograf"
-          about="Reels Maker || Storis maker || Graphic Designer || Web Designer."
-        />
-      </div>
-    </SwiperSlide>
+
     <SwiperSlide>
       <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
         <AboutCard
@@ -73,7 +58,17 @@ export default {
           name="Rahmatullo Qosimov"
           work="O'qituvchi"
           about="Backend: Python || Django."
-        />
+          />
+          <AboutCard
+          img="hayotbek"
+          name="Hayotbek Ruziyev"
+          work="Mobilograf"
+          about="Reels Maker || Storis maker || Graphic Designer || Web Designer."
+          />
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
         <AboutCard
           img="nurillo"
           name="Nurillo Madaminov"

@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth
 }
 section {
-  @apply py-24 flex justify-center items-center;
+  @apply py-24 flex justify-center items-center md:py-10;
 }
 
 .custom-container {

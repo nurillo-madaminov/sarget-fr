@@ -15,7 +15,8 @@ export default {}
             aloqaga chiqamiz
           </p>
         </div>
-        <div class="w-2/4 flex justify-center absolute lg:relative right-0 scale-110 md:scale-[0.80] xl:scale-[0.90]">
+        <div class="w-2/4 flex justify-center absolute lg:relative right-0 sm:scale-75">
+          <!-- scale-110 md:scale-[0.80] xl:scale-[0.90] -->
           <div class="bg-gray-800 p-10 rounded-2xl md:bg-transparent">
             <form>
               <div class="flex flex-col items-start gap-5">
