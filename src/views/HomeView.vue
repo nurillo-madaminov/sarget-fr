@@ -4,28 +4,32 @@ import SingleCourse from '@/components/SingleCourse.vue'
 import TeamSlider from '@/components/TeamSlider.vue'
 import InfoCard from '@/components/InfoCard.vue'
 
+import { Autoplay, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
+import 'swiper/css/pagination'
+
 export default {
-  components: { HeaderCarousel, SingleCourse, TeamSlider, InfoCard }
+  data() {
+    return {
+      modules: [Autoplay, Pagination],
+      slidesPerView: 4,
+      spaceBetween: 45
+    }
+  },
+  components: { HeaderCarousel, SingleCourse, TeamSlider, InfoCard, Swiper, SwiperSlide },
+  // mounted() {
+  //   window.onresize = () => {
+  //     innerWidth < 1279 ? ((this.slidesPerView = 3, this.spaceBetween = 40), (this.spaceBetween = 15)) : console.log(31232)
+  //   }
+  // }
 }
 </script>
 
 <template>
   <main>
     <HeaderCarousel />
-    <section id="courses" class="bg-[#272C31]">
-      <div class="w-full max-w-7xl">
-        <h1
-          class="text-4xl font-semibold text-white text-center mb-10 font-[Getvoip] sm:text-2xl"
-        >
-          Kurslarimiz
-        </h1>
-        <div class="flex flex-wrap justify-center gap-5 lg:flex-col lg:items-center">
-          <SingleCourse img="programming" />
-          <SingleCourse img="videography" />
-          <SingleCourse img="marketing" />
-        </div>
-      </div>
-    </section>
+    
     <section id="about">
       <div class="relative custom-container">
         <div class="absolute flex self-start justify-between w-full sm:hidden">
@@ -65,13 +69,43 @@ export default {
               bilan taqdirlandi. Sertifikatga ega bo'lgan o'quvchilarga davlat tomonida bepul
               noutbuklar berildi. Oktyabr oyiga kelib...
             </p>
-            <a href="#" class="px-8 py-3 text-xl tracking-wide text-white bg-blue-800 rounded-3xl"
-              >Batafsil</a
+            <router-link
+              :to="{ name: 'courses' }"
+              class="px-8 py-3 text-xl tracking-wide text-white bg-blue-800 rounded-3xl"
+              >Batafsil</router-link
             >
           </div>
         </div>
-        <div class="absolute left-0 -bottom-32 -z-10 md:hidden">
+        <div class="absolute left-0 -bottom-16 -z-10 md:hidden">
           <img src="https://picsum.photos/400/300" alt="image" class="rounded-xl" />
+        </div>
+      </div>
+    </section>
+    <section id="courses" class="bg-[#272C31]">
+      <div class="w-full max-w-7xl">
+        <div>
+          <h1
+            class="text-4xl font-semibold text-white text-center mb-10 font-[Getvoip] sm:text-2xl"
+          >
+            Kurslarimiz
+          </h1>
+          <div class="flex flex-wrap justify-center gap-5 lg:flex-col lg:items-center">
+            <swiper
+              :slidesPerView="this.slidesPerView"
+              :spaceBetween="this.spaceBetween"
+              :loop="true"
+              :autoplay="true"
+              :modules="modules"
+              class="mySwiper"
+            >
+              <swiper-slide><SingleCourse img="programming" /></swiper-slide>
+              <swiper-slide><SingleCourse img="smm" /></swiper-slide>
+              <swiper-slide><SingleCourse img="graphic_design" /></swiper-slide>
+              <swiper-slide><SingleCourse img="videography" /></swiper-slide>
+              <swiper-slide><SingleCourse img="marketing" /></swiper-slide>
+              <swiper-slide><SingleCourse img="targeting" /></swiper-slide>
+            </swiper>
+          </div>
         </div>
       </div>
     </section>
@@ -91,8 +125,9 @@ export default {
           <InfoCard
             icon="location-dot"
             title="our main office"
-            text="Andijon shahar Leniniskiy Istiqlol  27"
-          />
+            text="Andijon shahar, Istiqlol ko'chasi 27-uy (Sobiq Leninskiy)"
+            >Joyni Ko'rish</InfoCard
+          >
           <InfoCard
             icon="phone"
             title="phone number"
@@ -114,5 +149,5 @@ export default {
               farzandlari o'qitildi va sertifikatlar bilan taqdirlandi. 2023-yilning 1-sentyabrida
               katta re-brending tadbiri o'tkazildi va "NTA" "Sarget IT academy" nomiga
               o'zgartirildi. Darsliklar qayta tuzilib mukammallashtirildi va zamonaviy kasbga
-              yo'naltirilgan sohalar kiritildi.
+                yo'naltirilgan sohalar kiritildi.
 -->

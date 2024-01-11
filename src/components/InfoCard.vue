@@ -17,7 +17,9 @@ export default {
   >
     <font-awesome-icon :icon="['fas', icon]" class="text-[#26499f] text-5xl mb-5" />
     <h1 class="mb-4 text-lg font-semibold uppercase">{{ title }}</h1>
-    <p class="text-center">{{ text }}</p>
+    <p class="text-center">
+      {{ text }} <a href="https://maps.app.goo.gl/2LBKJGniYGXu7v7q7" target="_blank" class="text-blue-500 underline"><slot></slot></a>
+    </p>
   </div>
 </template>
 

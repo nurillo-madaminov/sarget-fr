@@ -18,8 +18,6 @@ export default {
     window.onresize = () => {
       innerWidth < 1279 ? (this.slidesPerView = 1) : (this.slidesPerView = 2)
     }
-    // if (innerWidth < 776) this.slidesPerView = 1
-    // else this.slidesPerView = 2    47...79
   }
 }
 </script>
