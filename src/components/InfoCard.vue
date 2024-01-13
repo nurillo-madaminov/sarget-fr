@@ -13,13 +13,18 @@ export default {
 
 <template>
   <div
-    class="flex shrink-0 flex-col justify-center items-center w-[305px] h-[300px] p-3 rounded-xl bg-white shadow-[0_0_40px_lightgray] sm:w-[250px] sm:h-[250px]"
+    class="flex shrink-0 flex-col justify-center items-center w-[305px] h-[300px] p-3 rounded-xl bg-white border border-slate-200 sm:w-[250px] sm:h-[250px]"
   >
     <font-awesome-icon :icon="['fas', icon]" class="text-[#26499f] text-5xl mb-5" />
     <h1 class="mb-4 text-lg font-semibold uppercase">{{ title }}</h1>
     <p class="text-center">
-      {{ text }} <a href="https://maps.app.goo.gl/2LBKJGniYGXu7v7q7" target="_blank" class="text-blue-500 underline"><slot></slot></a>
+      {{ text }}
+      <a
+        href="https://maps.app.goo.gl/2LBKJGniYGXu7v7q7"
+        target="_blank"
+        class="text-blue-500 underline"
+        ><slot></slot
+      ></a>
     </p>
   </div>
 </template>
-

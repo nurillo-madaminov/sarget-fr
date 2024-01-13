@@ -9,31 +9,31 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 export default {
   data() {
     return {
-      modules: [Autoplay],
-      slidesPerView: 2
+      modules: [Autoplay]
     }
   },
-  components: { AboutCard, Swiper, SwiperSlide },
-  mounted() {
-    window.onresize = () => {
-      innerWidth < 1279 ? (this.slidesPerView = 1) : (this.slidesPerView = 2)
-    }
-  }
+  components: { AboutCard, Swiper, SwiperSlide }
 }
 </script>
 
 <template>
   <Swiper
     :modules="modules"
-    :slides-per-view="this.slidesPerView"
+    :slides-per-view="1"
     :slides-offset-before="20"
     :slides-offset-after="20"
     :space-between="40"
     :loop="true"
-    :autoplay="true"
+    :autoplay="false"
+    :breakpoints="{
+      1280: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      }
+    }"
   >
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
+      <div class="flex flex-col gap-4 py-4 lg:flex-col lg:items-start">
         <AboutCard
           img="sardorbek"
           name="Sardorbek Uzakov"
@@ -50,23 +50,23 @@ export default {
     </SwiperSlide>
 
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
+      <div class="flex flex-col gap-4 py-4 lg:flex-col lg:items-start">
         <AboutCard
           img="rahmatillo"
           name="Rahmatullo Qosimov"
           work="O'qituvchi"
           about="Backend: Python || Django."
-          />
-          <AboutCard
+        />
+        <AboutCard
           img="hayotbek"
           name="Hayotbek Ruziyev"
           work="Mobilograf"
           about="Reels Maker || Storis maker || Graphic Designer || Web Designer."
-          />
+        />
       </div>
     </SwiperSlide>
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
+      <div class="flex flex-col gap-4 py-4 lg:flex-col lg:items-start">
         <AboutCard
           img="nurillo"
           name="Nurillo Madaminov"
