@@ -31,6 +31,7 @@ export default {
         spaceBetween: 40
       }
     }"
+    class="mySwiper"
   >
     <SwiperSlide>
       <div class="flex flex-col gap-4 py-4 lg:flex-col lg:items-start">

@@ -4,7 +4,7 @@ import SingleCourse from '@/components/SingleCourse.vue'
 import TeamSlider from '@/components/TeamSlider.vue'
 import InfoCard from '@/components/InfoCard.vue'
 
-import { Autoplay, Pagination } from 'swiper/modules'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -12,7 +12,7 @@ import 'swiper/css/pagination'
 export default {
   data() {
     return {
-      modules: [Autoplay, Pagination],
+      modules: [Autoplay, Pagination, Navigation],
       slidesPerView: 4,
       spaceBetween: 45
     }
@@ -70,15 +70,16 @@ export default {
               bilan taqdirlandi. Sertifikatga ega bo'lgan o'quvchilarga davlat tomonida bepul
               noutbuklar berildi. Oktyabr oyiga kelib...
             </p>
-            <router-link
-              :to="{ name: 'courses' }"
+            <a
+            href=""
               class="px-8 py-3 text-xl tracking-wide text-white bg-blue-800 rounded-3xl"
-              >Batafsil</router-link
+              >Batafsil</a
             >
           </div>
         </div>
         <div class="absolute left-0 -bottom-16 -z-10 md:hidden">
-          <img src="https://picsum.photos/400/300" alt="image" class="rounded-xl" />
+          <!-- 400/300 -->
+          <img src="#" alt="image" class="rounded-xl" />
         </div>
       </div>
     </section>
@@ -97,6 +98,9 @@ export default {
               :loop="true"
               :autoplay="true"
               :modules="modules"
+              :navigation="{
+                clickable: true
+              }"
               class="mySwiper"
               :breakpoints="{
                 320: {
@@ -162,9 +166,25 @@ export default {
   </main>
 </template>
 
+<style>
+.swiper-button-next,
+.swiper-button-prev {
+  border-radius: 15px;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  padding: 30px;
+  color: #000 !important;
+  fill: black !important;
+  stroke: black !important;
+}
+.swiper-button-next {
+  margin-right: 100px;
+}
+</style>
 <!-- 
              "Online IT School" nomi "NTA (nano
-              texnologiyalar akademiyasi)" nomiga o'zgartirildi. "NTA"ning 11 oylik faoliyati
+              texnologiy`alar akademiyasi)" nomiga o'zgartirildi. "NTA"ning 11 oylik faoliyati
               davomida "Yoshlar agentligi" bilan shartnoma tuzildi va "Kelajak kasblari" loyihasi
               doirasida 6 oy kam taminlangan, boquvchisi yo'q va temir daftarga kiritilgan oila
               farzandlari o'qitildi va sertifikatlar bilan taqdirlandi. 2023-yilning 1-sentyabrida

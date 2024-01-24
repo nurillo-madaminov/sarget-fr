@@ -27,9 +27,10 @@ export default {
       :modules="modules"
       class="mySwipe"
     >
-      <swiper-slide><img src="https://picsum.photos/1900/1069" alt="image" /></swiper-slide>
-      <swiper-slide><img src="https://picsum.photos/1900/1069" alt="image" /></swiper-slide>
-      <swiper-slide><img src="https://picsum.photos/1900/1069" alt="image" /></swiper-slide>
+    <!-- 1900/1069 -->
+      <swiper-slide><img src="#" alt="image" /></swiper-slide>
+      <swiper-slide><img src="#" alt="image" /></swiper-slide>
+      <swiper-slide><img src="#" alt="image" /></swiper-slide>
     </swiper>
   </div>
 </template>
