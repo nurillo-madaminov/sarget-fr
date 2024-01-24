@@ -9,17 +9,23 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 export default {
   data() {
     return {
-      modules: [Autoplay]
+      modules: [Autoplay],
+      slidesPerView: 2
     }
   },
-  components: { AboutCard, Swiper, SwiperSlide }
+  components: { AboutCard, Swiper, SwiperSlide },
+  mounted() {
+    window.onresize = () => {
+      innerWidth < 1279 ? (this.slidesPerView = 1) : (this.slidesPerView = 2)
+    }
+  }
 }
 </script>
 
 <template>
   <Swiper
     :modules="modules"
-    :slides-per-view="1"
+    :slides-per-view="this.slidesPerView"
     :slides-offset-before="20"
     :slides-offset-after="20"
     :space-between="40"
@@ -34,7 +40,7 @@ export default {
     class="mySwiper"
   >
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4 lg:flex-col lg:items-start">
+      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
         <AboutCard
           img="sardorbek"
           name="Sardorbek Uzakov"
@@ -51,23 +57,23 @@ export default {
     </SwiperSlide>
 
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4 lg:flex-col lg:items-start">
+      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
         <AboutCard
           img="rahmatillo"
           name="Rahmatullo Qosimov"
           work="O'qituvchi"
           about="Backend: Python || Django."
-        />
-        <AboutCard
+          />
+          <AboutCard
           img="hayotbek"
           name="Hayotbek Ruziyev"
           work="Mobilograf"
           about="Reels Maker || Storis maker || Graphic Designer || Web Designer."
-        />
+          />
       </div>
     </SwiperSlide>
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4 lg:flex-col lg:items-start">
+      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
         <AboutCard
           img="nurillo"
           name="Nurillo Madaminov"

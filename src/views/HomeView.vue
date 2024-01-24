@@ -17,8 +17,7 @@ export default {
       spaceBetween: 45
     }
   },
-  mounted() {},
-  components: { HeaderCarousel, SingleCourse, TeamSlider, InfoCard, Swiper, SwiperSlide }
+  components: { HeaderCarousel, SingleCourse, TeamSlider, InfoCard, Swiper, SwiperSlide },
   // mounted() {
   //   window.onresize = () => {
   //     innerWidth < 1279 ? ((this.slidesPerView = 3, this.spaceBetween = 40), (this.spaceBetween = 15)) : console.log(31232)
@@ -30,7 +29,7 @@ export default {
 <template>
   <main>
     <HeaderCarousel />
-
+    
     <section id="about">
       <div class="relative custom-container">
         <div class="absolute flex self-start justify-between w-full sm:hidden">
@@ -91,7 +90,7 @@ export default {
           >
             Kurslarimiz
           </h1>
-          <div class="flex justify-center px-4">
+          <div class="flex flex-wrap justify-center gap-5 lg:flex-col lg:items-center">
             <swiper
               :slidesPerView="this.slidesPerView"
               :spaceBetween="this.spaceBetween"
@@ -102,26 +101,6 @@ export default {
                 clickable: true
               }"
               class="mySwiper"
-              :breakpoints="{
-                320: {
-                  slidesPerView: 1,
-                  spaceBetween: 20
-                },
-                540: {
-                  slidesPerView: 2,
-                  spaceBetween: 20
-                },
-                // when window width is >= 480px
-                960: {
-                  slidesPerView: 3,
-                  spaceBetween: 30
-                },
-                // when window width is >= 640px
-                1200: {
-                  slidesPerView: 4,
-                  spaceBetween: 40
-                }
-              }"
             >
               <swiper-slide><SingleCourse img="programming" /></swiper-slide>
               <swiper-slide><SingleCourse img="smm" /></swiper-slide>
