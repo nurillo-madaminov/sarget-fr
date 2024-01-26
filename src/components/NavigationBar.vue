@@ -19,7 +19,7 @@ export default {
     class="header py-4 px-0 w-full fixed top-0 left-0 z-[999] backdrop-blur-2xl bg-black bg-opacity-30 shadow-[0_0_50px_#333]"
   >
     <div
-      class="max-w-7xl mx-auto flex items-center justify-between md:flex-col px-8 sm:px-4 transition-all"
+      class=".custom-container mx-auto flex items-center justify-between md:flex-col px-8 sm:px-4 transition-all"
       id="container"
     >
       <div class="md:flex md:justify-between md:w-full">

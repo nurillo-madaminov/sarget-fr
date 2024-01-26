@@ -84,14 +84,17 @@ export default {
       </div>
     </section>
     <section id="courses" class="bg-[#272C31]">
-      <div class="w-full max-w-7xl">
+      <div class="w-full .custom-container">
         <div>
           <h1
             class="text-4xl font-semibold text-white text-center mb-10 font-[Getvoip] sm:text-2xl"
           >
             Kurslarimiz
           </h1>
-          <div class="flex justify-center px-4">
+          <div class="flex items-center justify-between px-4 ">
+            <div class="previous">
+              <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+            </div>
             <swiper
               :slidesPerView="this.slidesPerView"
               :spaceBetween="this.spaceBetween"
@@ -99,7 +102,9 @@ export default {
               :autoplay="true"
               :modules="modules"
               :navigation="{
-                clickable: true
+                clickable: true,
+                nextEl: '.next',
+                prevEl: '.previous'
               }"
               class="mySwiper"
               :breakpoints="{
@@ -130,13 +135,16 @@ export default {
               <swiper-slide><SingleCourse img="marketing" /></swiper-slide>
               <swiper-slide><SingleCourse img="targeting" /></swiper-slide>
             </swiper>
+            <div class="next">
+              <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section id="team" class="flex-col gap-10">
       <div class="header">
-        <h1 class="text-4xl font-semibold font-[arial]">Bizning <span class="">j</span>amoa</h1>
+        <h1 class="text-4xl font-semibold font-[arial]">Bizning jamoa</h1>
       </div>
       <div class="overflow-auto custom-container">
         <team-slider />
@@ -167,19 +175,26 @@ export default {
 </template>
 
 <style>
-.swiper-button-next,
-.swiper-button-prev {
-  border-radius: 15px;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.9);
+
+
+.next, .previous {
+  width: 50px;
+  height: 50px;
   position: absolute;
-  padding: 30px;
-  color: #000 !important;
-  fill: black !important;
-  stroke: black !important;
+  right: 20px;
+  margin-top: 100px;
+  z-index: 999;
+  background-color: rgba(50, 59, 59, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
-.swiper-button-next {
-  margin-right: 100px;
+.next svg, .previous svg {
+  width: 15px;
+}
+.previous {
+  left: 20px;
 }
 </style>
 <!-- 

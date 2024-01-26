@@ -12,7 +12,7 @@ section {
 }
 
 .custom-container {
-  @apply max-w-7xl w-full;
+  @apply max-w-[1200px] w-full;
 }
 
 @font-face {

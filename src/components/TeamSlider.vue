@@ -31,12 +31,6 @@ export default {
     :space-between="40"
     :loop="true"
     :autoplay="false"
-    :breakpoints="{
-      1280: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      }
-    }"
     class="mySwiper"
   >
     <SwiperSlide>
