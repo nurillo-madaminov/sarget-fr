@@ -13,7 +13,7 @@ export default {
 
 <template>
   <div
-    class="flex shrink-0 flex-col justify-center items-center w-[305px] h-[300px] p-3 rounded-xl bg-white shadow-[0_0_40px_lightgray] xl:w-[250px] sm:h-[250px]"
+    class="flex mb-10 sm:mb-0 flex-col justify-center items-center w-[300px] h-[300px] p-3 rounded-xl bg-white shadow-[0_0_40px_lightgray] custom:w-[250px] custom:h-[250px]"
   >
     <font-awesome-icon :icon="['fas', icon]" class="text-[#26499f] text-5xl mb-5" />
     <h1 class="mb-4 text-lg font-semibold uppercase">{{ title }}</h1>

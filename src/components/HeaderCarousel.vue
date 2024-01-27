@@ -28,9 +28,9 @@ export default {
       class="mySwipe"
     >
     <!-- 1900/1069 -->
-      <swiper-slide><img src="#" alt="image" /></swiper-slide>
-      <swiper-slide><img src="#" alt="image" /></swiper-slide>
-      <swiper-slide><img src="#" alt="image" /></swiper-slide>
+      <swiper-slide class="bg-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam eos recusandae id earum aliquam nam quisquam voluptatibus dolorum, quia odio delectus fugiat provident aperiam praesentium modi perspiciatis, molestiae possimus.</swiper-slide>
+      <swiper-slide class="bg-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam eos recusandae id earum aliquam nam quisquam voluptatibus dolorum, quia odio delectus fugiat provident aperiam praesentium modi perspiciatis, molestiae possimus.</swiper-slide>
+      <swiper-slide class="bg-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam eos recusandae id earum aliquam nam quisquam voluptatibus dolorum, quia odio delectus fugiat provident aperiam praesentium modi perspiciatis, molestiae possimus.</swiper-slide>
     </swiper>
   </div>
 </template>
@@ -41,7 +41,7 @@ export default {
 }
 
 .swiper-slide {
-  @apply text-center bg-white text-lg flex justify-center items-center;
+  @apply text-center text-lg flex justify-center items-center;
 }
 
 .swiper-slide img {

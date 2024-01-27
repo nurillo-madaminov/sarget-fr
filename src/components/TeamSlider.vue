@@ -34,7 +34,7 @@ export default {
     class="mySwiper"
   >
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
+      <div class="flex flex-col gap-4 py-4 lg:flex-col lg:items-center">
         <AboutCard
           img="sardorbek"
           name="Sardorbek Uzakov"
@@ -51,7 +51,7 @@ export default {
     </SwiperSlide>
 
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
+      <div class="flex flex-col gap-4 py-4 lg:flex-col lg:items-center">
         <AboutCard
           img="rahmatillo"
           name="Rahmatullo Qosimov"
@@ -67,7 +67,7 @@ export default {
       </div>
     </SwiperSlide>
     <SwiperSlide>
-      <div class="flex flex-col gap-4 py-4 xl:flex-row lg:flex-col lg:items-center">
+      <div class="flex flex-col gap-4 py-4 lg:flex-col lg:items-center">
         <AboutCard
           img="nurillo"
           name="Nurillo Madaminov"

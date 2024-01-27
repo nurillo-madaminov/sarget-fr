@@ -35,8 +35,8 @@ export default {
       <nav class="navbar md:w-full md:top-full md:left-0 md:h-0 md:overflow-hidden" ref="navbar">
         <ul class="my-4 md:flex-col flex gap-8">
           <li><a href="#home">Asosiy</a></li>
-          <li><a href="#courses">Kurslarimiz</a></li>
           <li><a href="#about">Biz haqimizda</a></li>
+          <li><a href="#courses">Kurslarimiz</a></li>
           <li><a href="#contact">Aloqa</a></li>
         </ul>
       </nav>

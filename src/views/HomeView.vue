@@ -60,8 +60,8 @@ export default {
           <div
             class="relative w-1/3 px-5 py-10 transition-all duration-200 bg-white border-2 lg:w-2/3 md:w-full rounded-xl border-lightgray"
           >
-            <h1 class="mb-5 text-3xl font-semibold font-[Getvoip]">Biz haqimizda</h1>
-            <p class="text-[17px] text-justify mb-8">
+            <h1 class="mb-5 text-3xl font-semibold font-[Getvoip] sm:text-xl">Biz haqimizda</h1>
+            <p class="text-[17px] text-justify mb-8 sm:text-sm">
               2022-yilning 1-aprelida "Online IT School"ga asos solindi. Dasturlash va grafik
               dizaynerlik yo'nalishlarida ta'lim berish boshlandi, so'ngra, tashkilotlardan biri
               Yevropa ittifoqi tomonidan moliyalashtirilgan "Hamroh" nomli loyiha bilan 3 oylik
@@ -72,14 +72,13 @@ export default {
             </p>
             <a
             href=""
-              class="px-8 py-3 text-xl tracking-wide text-white bg-blue-800 rounded-3xl"
+              class="px-8 py-3 text-xl text- tracking-wide text-white sm:px-6 sm:py-1 sm:text-lg bg-blue-800 rounded-3xl"
               >Batafsil</a
             >
           </div>
         </div>
-        <div class="absolute left-0 -bottom-16 -z-10 md:hidden">
-          <!-- 400/300 -->
-          <img src="#" alt="image" class="rounded-xl" />
+        <div class="absolute custom:px-10 left-0 -bottom-16 -z-10 md:hidden">
+          <img src="https://via.placeholder.com/400x300" alt="image" class="rounded-xl" />
         </div>
       </div>
     </section>

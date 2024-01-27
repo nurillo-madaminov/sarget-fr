@@ -15,8 +15,8 @@ export default {
 </script>
 
 <template>
-  <footer class="bg-[#17222B] py-32 sm:p-0" id="contact">
-    <div class=".custom-container mx-auto">
+  <footer class="bg-[#17222B] py-24 sm:p-0" id="contact">
+    <div class="custom-container mx-auto">
       <div
         class="w-full py-16 px-10 sm:p-10 lg:bg-transparent bg-[#263039] xl:bg-transparent flex justify-between items-center rounded-3xl relative lg:flex-col"
       >
@@ -24,7 +24,7 @@ export default {
           <h1 class="text-5xl lg:text-3xl sm:text-[25px] text-white font-semibold">
             Soha tanlashdagi birinchi yordamni beramiz
           </h1>
-          <p class="text-gray-400 mt-5 sm:text-sm">
+          <p class="text-gray-400 my-5 sm:text-sm">
             Ma'lumotlaringizni qoldiring va sizga tez fursatda <br />
             aloqaga chiqamiz
           </p>
@@ -78,6 +78,58 @@ export default {
           </div>
         </div>
       </div>
+      <hr class="border border-gray-400 mt-40 mb-20 sm:mt-0 sm:mb-5">
+      <div class="footer-links flex justify-between flex-wrap sm:flex-col sm:pb-8 gap-y-10 gap-x-5 text-gray-400">
+        <div class="w-[255px]">
+          <img src="../assets/img/logo.png" alt="image" class="mb-4 w-[150px]">
+          <h1 class="text-3xl mb-2 text-white custom:text-2xl">+998 12 123 45 67</h1>
+          <p>Toshkent shahar, Mirzo <br> Ulug'bek tumani, Muminov <br> ko'chasi, 4A</p>
+        </div>
+        <div class="w-[85px]">
+          <h3 class="text-xl mb-2 bold text-white">Platforma</h3>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#">Kasblar</a></li>
+            <li><a href="#">Kurslar</a></li>
+          </ul>
+        </div>
+        <div class="w-[125px]">
+          <h3 class="text-xl mb-2 bold text-white">Kompaniya</h3>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#">Biz haqimizda</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Ommaviy oferta</a></li>
+            <li><a href="#">Maxfiylik siyosati</a></li>
+          </ul>
+        </div>
+        <div class="w-[160px]">
+          <h3 class="text-xl mb-2 bold text-white">Ma'lumot</h3>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#">Bog'lanish</a></li>
+            <li><a href="#">Bo'lib to'lash</a></li>
+            <li><a href="#">Qanday xarid qilinadi?</a></li>
+            <li><a href="#">Voucher qollanma</a></li>
+            <li><a href="#">Chegirmalar</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Fikrlar</a></li>
+          </ul>
+        </div>
+       
+        <div class="documents flex flex-wrap gap-y-5 w-[200px]">
+          <div  class="w-[100px]">
+            <div class="img w-[60px] h-[69px] bg-gray-400"></div>
+            <p class="text-sm">Tasdiqnoma</p>
+          </div>
+          <div class="w-[100px]">
+            <div class="img w-[60px] h-[72px] bg-gray-400"></div>
+            <p class="text-sm">Guvohnoma</p>
+          </div>
+          <div class="w-[100px]">
+            <div class="img w-[99px] h-[69px] bg-gray-400"></div>
+            <p class="text-sm whitespace-nowrap">IT park rezidenti</p>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
+
