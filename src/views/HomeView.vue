@@ -4,6 +4,12 @@ import SingleCourse from '@/components/SingleCourse.vue'
 import TeamSlider from '@/components/TeamSlider.vue'
 import InfoCard from '@/components/InfoCard.vue'
 
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faChevronDown);
+
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
@@ -14,11 +20,33 @@ export default {
     return {
       modules: [Autoplay, Pagination, Navigation],
       slidesPerView: 4,
-      spaceBetween: 45
+      spaceBetween: 45,
+      faqData: [
+        {
+          id: 1,
+          title: 'Hello world1',
+          text: 'Lorem ipsum dolor sit.'
+        },
+        {
+          id: 2,
+          title: 'Hello world2',
+          text: 'Lorem ipsum dolor sit.'
+        },
+        {
+          id: 3,
+          title: 'Hello world3',
+          text: 'Lorem ipsum dolor sit.'
+        },
+        {
+          id: 4,
+          title: 'Hello world4',
+          text: 'Lorem ipsum dolor sit.'
+        }
+      ]
     }
   },
   mounted() {},
-  components: { HeaderCarousel, SingleCourse, TeamSlider, InfoCard, Swiper, SwiperSlide }
+  components: { HeaderCarousel, SingleCourse, TeamSlider, InfoCard, Swiper, SwiperSlide, FontAwesomeIcon }
   // mounted() {
   //   window.onresize = () => {
   //     innerWidth < 1279 ? ((this.slidesPerView = 3, this.spaceBetween = 40), (this.spaceBetween = 15)) : console.log(31232)
@@ -71,7 +99,7 @@ export default {
               noutbuklar berildi. Oktyabr oyiga kelib...
             </p>
             <a
-            href=""
+              href=""
               class="px-8 py-3 text-xl text- tracking-wide text-white sm:px-6 sm:py-1 sm:text-lg bg-blue-800 rounded-3xl"
               >Batafsil</a
             >
@@ -90,9 +118,13 @@ export default {
           >
             Kurslarimiz
           </h1>
-          <div class="flex items-center justify-between px-4 ">
+          <div class="flex items-center justify-between px-4">
             <div class="previous">
-              <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+              <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                />
+              </svg>
             </div>
             <swiper
               :slidesPerView="this.slidesPerView"
@@ -115,12 +147,10 @@ export default {
                   slidesPerView: 2,
                   spaceBetween: 20
                 },
-                // when window width is >= 480px
                 960: {
                   slidesPerView: 3,
                   spaceBetween: 30
                 },
-                // when window width is >= 640px
                 1200: {
                   slidesPerView: 4,
                   spaceBetween: 40
@@ -135,7 +165,11 @@ export default {
               <swiper-slide><SingleCourse img="targeting" /></swiper-slide>
             </swiper>
             <div class="next">
-              <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+              <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -149,6 +183,17 @@ export default {
         <team-slider />
       </div>
     </section>
+    <section class="pt-0">
+      <div class="custom-container">
+        <h1 class="text-4xl font-semibold text-center mb-5">FAQ</h1>
+        <div class="flex flex-col gap-3 px-5">
+          <details v-for="x in this.faqData" :key="x.id" class="bg-[#263039] text-white px-7 py-4 rounded-lg">
+            <summary class="list-none text-lg font-medium tracking-wide flex justify-between items-center">{{ x.title }} <font-awesome-icon :icon="['fas', 'chevron-down']" ref="chevron"/></summary>
+            <p class="text-gray-300">{{ x.text }}</p>
+          </details>
+        </div>
+      </div>
+    </section>
     <section
       class="bg-white bg-gradient-to-t from-[#17222B] from-60% via-gray-50 via-10% to-transparent py-0"
     >
@@ -158,7 +203,7 @@ export default {
             icon="location-dot"
             title="our main office"
             text="Andijon shahar, Istiqlol ko'chasi 27-uy (Sobiq Leninskiy)"
-            >Joyni Ko'rish</InfoCard
+            >Joylashuvni Ko'rish</InfoCard
           >
           <InfoCard
             icon="phone"
@@ -174,9 +219,8 @@ export default {
 </template>
 
 <style>
-
-
-.next, .previous {
+.next,
+.previous {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -189,7 +233,8 @@ export default {
   align-items: center;
   border-radius: 50%;
 }
-.next svg, .previous svg {
+.next svg,
+.previous svg {
   width: 15px;
 }
 .previous {

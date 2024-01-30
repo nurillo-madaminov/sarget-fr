@@ -1,5 +1,12 @@
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTelegram, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+library.add( faTelegram, faInstagram );
+
 export default {
+  components: { FontAwesomeIcon },
   props: ['img', 'name', 'work', 'about'],
   methods: {
     getImageUrl(name) {
@@ -21,10 +28,10 @@ export default {
         <h1 class="text-2xl tracking-wid text-gray-700 uppercase font-[Getvoip] max-w-sm">{{ name }}</h1>
         <h3 class="text-xl font-bold text-blue-800">{{ work }}</h3>
         <p class="text-lg text-neutral-600 max-w-[350px]">{{ about }}</p>
+        <p class="text-neutral-600 text-lg -mt-3"><slot></slot></p>
         <div class="flex gap-2">
-          <a href="#"><i class="text-3xl fa-brands fa-facebook"></i>asfd</a>
-          <a href="#"><i class="text-3xl fa-brands fa-twitter"></i>asfd</a>
-          <a href="#"><i class="text-3xl fa-brands fa-instagram"></i>asfd</a>
+          <a href="#"><font-awesome-icon :icon="['fab', 'instagram']" class="text-xl" /></a>
+          <a href="#"><font-awesome-icon :icon="['fab', 'telegram']" class="text-xl" /></a>
         </div>
       </div>
     </div>

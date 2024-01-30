@@ -38,14 +38,14 @@ export default {
         <AboutCard
           img="sardorbek"
           name="Sardorbek Uzakov"
-          work="Asoschi"
-          about="Marketolog || SMM Manager || Targetolog || Graphic Designer."
+          work="Rahbar"
+          about="Marketolog, SMM Manager, Targetolog, Graphic Designer."
         />
         <AboutCard
           img="muhammadjon"
           name="Muhammadjon Adhamjonov"
           work="O'qituvchi"
-          about="Microsoft Office || Graphic Designer."
+          about="Microsoft Office: Word, Exel, Power Point. Graphic Design: Photoshop, Illustrator."
         />
       </div>
     </SwiperSlide>
@@ -56,13 +56,13 @@ export default {
           img="rahmatillo"
           name="Rahmatullo Qosimov"
           work="O'qituvchi"
-          about="Backend: Python || Django."
-          />
+          about="Backend: Python , Django."
+          >Bir nechta start up loyihalar ishtirokchisi</AboutCard>
           <AboutCard
           img="hayotbek"
           name="Hayotbek Ruziyev"
           work="Mobilograf"
-          about="Reels Maker || Storis maker || Graphic Designer || Web Designer."
+          about="Reels Maker,  Storis maker, Graphic Designer, Web Designer."
           />
       </div>
     </SwiperSlide>
@@ -72,7 +72,7 @@ export default {
           img="nurillo"
           name="Nurillo Madaminov"
           work="Dasturchi"
-          about="Frontend: HTML || CSS || Bootstrap || Tailwind CSS || SASS || JavaScript || VueJS."
+          about="Frontend: HTML , CSS , Bootstrap , Tailwind CSS , SASS , JavaScript , VueJS."
         />
       </div>
     </SwiperSlide>

@@ -1,25 +1,30 @@
-<script>
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faLocationDot, faPhone, faFax, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-library.add(faLocationDot, faPhone, faFax, faEnvelope) // Use faMapMarker instead of faMapLocationDot
-
-export default {
-  components: { FontAwesomeIcon },
-  props: ['icon', 'title', 'text']
-}
-</script>
-
 <template>
   <div
     class="flex mb-10 sm:mb-0 flex-col justify-center items-center w-[300px] h-[300px] p-3 rounded-xl bg-white shadow-[0_0_40px_lightgray] custom:w-[250px] custom:h-[250px]"
   >
     <font-awesome-icon :icon="['fas', icon]" class="text-[#26499f] text-5xl mb-5" />
     <h1 class="mb-4 text-lg font-semibold uppercase">{{ title }}</h1>
-    <p class="text-center">
-      {{ text }} <a href="https://maps.app.goo.gl/2LBKJGniYGXu7v7q7" target="_blank" class="text-blue-500 underline"><slot></slot></a>
-    </p>
+    <p class="text-center text-sm" v-html="formattedText"></p>
+    <a href="#" class="underline text-blue-500"><slot></slot></a>
+    
   </div>
 </template>
 
+<script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faLocationDot, faPhone, faFax, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faLocationDot, faPhone, faFax, faEnvelope);
+
+export default {
+  components: { FontAwesomeIcon },
+  props: ['icon', 'title', 'text'],
+  computed: {
+    formattedText() {
+      // Replace || with <br> in the text prop
+      return this.text.replace(/\s*\|\|\s*/g, '<br>');
+    },
+  },
+};
+</script>
