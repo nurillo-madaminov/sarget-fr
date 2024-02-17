@@ -80,7 +80,7 @@ export default {
             class="w-2/4 md:w-full flex justify-end md:justify-center relative top-[100px] lg:top-14 transition-all duration-200 md:top-2 px-3"
           >
             <img
-              src="https://picsum.photos/500/500"
+              src="https://via.placeholder.com/500x500"
               alt="image"
               class="rounded-lg bg-white shadow-[-5px_5px_40px_lightgray]"
             />
