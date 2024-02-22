@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <footer class="bg-[#17222B] py-24 sm:p-0" id="contact">
+  <footer class="bg-[#17222B] py-28 sm:p-0" id="contact">
     <div class="custom-container mx-auto">
       <div
         class="w-full py-16 px-10 sm:p-10 lg:bg-transparent bg-[#263039] xl:bg-transparent flex justify-between items-center rounded-3xl relative lg:flex-col"

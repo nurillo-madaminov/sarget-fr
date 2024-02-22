@@ -31,7 +31,7 @@ export default {
 
           <div class="flex items-center justify-center gap-4 pb-4">
               <p>Abduroziq Halilov</p>
-              <a href="#" class="courses-price">UZS oyiga</a>
+              <router-link :to="{name: }" class="courses-price">UZS oyiga</router-link>
           </div>
         </div>
       </div>
