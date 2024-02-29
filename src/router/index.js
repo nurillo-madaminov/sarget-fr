@@ -1,9 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '@/views/HomeView.vue'
 import SingleCourseView from '@/views/SingleCourseView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior() {
+    return { top: 0 }
+  },
   routes: [
     {
       path: '/',
@@ -11,7 +14,7 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/course/:id',
+      path: '/courses/:id',
       name: 'courseDetails',
       component: SingleCourseView
     }

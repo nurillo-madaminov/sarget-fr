@@ -4,20 +4,22 @@ import SingleCourse from '@/components/SingleCourse.vue'
 import TeamSlider from '@/components/TeamSlider.vue'
 import InfoCard from '@/components/InfoCard.vue'
 
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faChevronDown);
+library.add(faChevronDown)
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import { dumbData } from '@/store'
 
 export default {
   data() {
     return {
+      data: dumbData,
       modules: [Autoplay, Pagination, Navigation],
       slidesPerView: 4,
       spaceBetween: 45,
@@ -45,13 +47,20 @@ export default {
       ]
     }
   },
-  mounted() {},
-  components: { HeaderCarousel, SingleCourse, TeamSlider, InfoCard, Swiper, SwiperSlide, FontAwesomeIcon }
-  // mounted() {
-  //   window.onresize = () => {
-  //     innerWidth < 1279 ? ((this.slidesPerView = 3, this.spaceBetween = 40), (this.spaceBetween = 15)) : console.log(31232)
-  //   }
-  // }
+  components: {
+    HeaderCarousel,
+    SingleCourse,
+    TeamSlider,
+    InfoCard,
+    Swiper,
+    SwiperSlide,
+    FontAwesomeIcon
+  },
+  mounted() {
+    this.data.forEach((element) => {
+      console.log(element.title)
+    })
+  }
 }
 </script>
 
@@ -157,12 +166,15 @@ export default {
                 }
               }"
             >
-              <swiper-slide><SingleCourse img="programming" /></swiper-slide>
-              <swiper-slide><SingleCourse img="smm" /></swiper-slide>
-              <swiper-slide><SingleCourse img="graphic_design" /></swiper-slide>
-              <swiper-slide><SingleCourse img="videography" /></swiper-slide>
-              <swiper-slide><SingleCourse img="marketing" /></swiper-slide>
-              <swiper-slide><SingleCourse img="targeting" /></swiper-slide>
+              <swiper-slide v-for="x in this.data" :key="x.id"
+                ><SingleCourse :img="x.img" :title="x.title" :text="x.text" :teacher="x.teacher" :id="x.id"
+              /></swiper-slide>
+              <!-- <swiper-slide><SingleCourse img="programming" id="1"/></swiper-slide>
+              <swiper-slide><SingleCourse img="smm" id="2"/></swiper-slide>
+              <swiper-slide><SingleCourse img="graphic_design" id="3"/></swiper-slide>
+              <swiper-slide><SingleCourse img="videography" id="4"/></swiper-slide>
+              <swiper-slide><SingleCourse img="marketing" id="5"/></swiper-slide>
+              <swiper-slide><SingleCourse img="targeting" id="6"/></swiper-slide> -->
             </swiper>
             <div class="next">
               <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -187,8 +199,16 @@ export default {
       <div class="custom-container">
         <h1 class="text-4xl font-semibold text-center mb-5">FAQ</h1>
         <div class="flex flex-col gap-3 px-5">
-          <details v-for="x in this.faqData" :key="x.id" class="bg-[#263039] text-white px-7 py-4 rounded-lg">
-            <summary class="list-none text-lg font-medium tracking-wide flex justify-between items-center">{{ x.title }} <font-awesome-icon :icon="['fas', 'chevron-down']" ref="chevron"/></summary>
+          <details
+            v-for="x in this.faqData"
+            :key="x.id"
+            class="bg-[#263039] text-white px-7 py-4 rounded-lg"
+          >
+            <summary
+              class="list-none text-lg font-medium tracking-wide flex justify-between items-center"
+            >
+              {{ x.title }} <font-awesome-icon :icon="['fas', 'chevron-down']" ref="chevron" />
+            </summary>
             <p class="text-gray-300">{{ x.text }}</p>
           </details>
         </div>
