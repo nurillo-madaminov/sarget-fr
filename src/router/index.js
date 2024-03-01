@@ -4,9 +4,9 @@ import SingleCourseView from '@/views/SingleCourseView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  scrollBehavior() {
-    return { top: 0 }
-  },
+  // scrollBehavior() {
+  //   return { top: "-100px", }
+  // },
   routes: [
     {
       path: '/',

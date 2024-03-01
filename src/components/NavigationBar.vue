@@ -24,8 +24,8 @@ export default {
     >
       <div class="md:flex md:justify-between md:w-full">
         <div class="logo flex items-center">
-          <a href="index.html">
-              <img src="@/assets/img/logo.png" alt="logo" width="200">
+          <a href="/">
+              <img src="@/assets/img/logo.png" alt="logo" width="150">
           </a>
         </div>
         <button class="hidden md:inline-block p-4" @click="openNav">

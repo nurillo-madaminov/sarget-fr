@@ -40,12 +40,16 @@ export default {
           name="Sardorbek Uzakov"
           work="Rahbar"
           about="Marketolog, SMM Manager, Targetolog, Graphic Designer."
+          instagram="sardorbek_uzakov_"
+          telegram="uzakov_3434"
         />
         <AboutCard
           img="muhammadjon"
           name="Muhammadjon Adhamjonov"
           work="O'qituvchi"
           about="Microsoft Office: Word, Exel, Power Point. Graphic Design: Photoshop, Illustrator."
+          instagram=""
+          telegram=""
         />
       </div>
     </SwiperSlide>
@@ -57,12 +61,16 @@ export default {
           name="Rahmatullo Qosimov"
           work="O'qituvchi"
           about="Backend: Python , Django."
+          instagram=""
+          telegram=""
           >Bir nechta start up loyihalar ishtirokchisi</AboutCard>
           <AboutCard
           img="hayotbek"
           name="Hayotbek Ruziyev"
           work="Mobilograf"
           about="Reels Maker,  Storis maker, Graphic Designer, Web Designer."
+          instagram=""
+          telegram=""
           />
       </div>
     </SwiperSlide>
@@ -73,6 +81,8 @@ export default {
           name="Nurillo Madaminov"
           work="Dasturchi"
           about="Frontend: HTML , CSS , Bootstrap , Tailwind CSS , SASS , JavaScript , VueJS."
+          instagram="imjustned_"
+          telegram="imjustned"
         />
       </div>
     </SwiperSlide>

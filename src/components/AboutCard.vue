@@ -7,7 +7,7 @@ library.add( faTelegram, faInstagram );
 
 export default {
   components: { FontAwesomeIcon },
-  props: ['img', 'name', 'work', 'about'],
+  props: ['img', 'name', 'work', 'about', "telegram", "instagram"],
   methods: {
     getImageUrl(name) {
       return new URL(`../assets/img/${name}.jpg`, import.meta.url).href
@@ -30,8 +30,8 @@ export default {
         <p class="text-lg text-neutral-600 max-w-[350px]">{{ about }}</p>
         <p class="text-neutral-600 text-lg -mt-3"><slot></slot></p>
         <div class="flex gap-2">
-          <a href="#"><font-awesome-icon :icon="['fab', 'instagram']" class="text-xl" /></a>
-          <a href="#"><font-awesome-icon :icon="['fab', 'telegram']" class="text-xl" /></a>
+          <a :href="`https://instagram.com/${instagram}`"><font-awesome-icon :icon="['fab', 'instagram']" class="text-xl" /></a>
+          <a :href="`https://t.me/${telegram}`"><font-awesome-icon :icon="['fab', 'telegram']" class="text-xl" /></a>
         </div>
       </div>
     </div>

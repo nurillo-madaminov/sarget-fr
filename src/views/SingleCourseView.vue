@@ -5,7 +5,7 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="h-screen bg-red-500 flex items-center justify-center">
+  <div class="">
     <h1>{{ $route.params.id }}</h1>
   </div>
 </template>
