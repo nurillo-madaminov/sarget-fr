@@ -169,12 +169,6 @@ export default {
               <swiper-slide v-for="x in this.data" :key="x.id"
                 ><SingleCourse :img="x.img" :title="x.title" :text="x.text" :teacher="x.teacher" :id="x.id"
               /></swiper-slide>
-              <!-- <swiper-slide><SingleCourse img="programming" id="1"/></swiper-slide>
-              <swiper-slide><SingleCourse img="smm" id="2"/></swiper-slide>
-              <swiper-slide><SingleCourse img="graphic_design" id="3"/></swiper-slide>
-              <swiper-slide><SingleCourse img="videography" id="4"/></swiper-slide>
-              <swiper-slide><SingleCourse img="marketing" id="5"/></swiper-slide>
-              <swiper-slide><SingleCourse img="targeting" id="6"/></swiper-slide> -->
             </swiper>
             <div class="next">
               <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -221,16 +215,16 @@ export default {
         <div class="flex flex-wrap justify-center gap-5 mb-10">
           <InfoCard
             icon="location-dot"
-            title="our main office"
+            title="Bizning asosiy ofis"
             text="Andijon shahar, Istiqlol ko'chasi 27-uy (Sobiq Leninskiy)"
             >Joylashuvni Ko'rish</InfoCard
           >
           <InfoCard
             icon="phone"
-            title="phone number"
+            title="Telefon raqamimiz"
             text="+998 88 833 3434 || +998 33 688 10 00"
           />
-          <InfoCard icon="fax" title="fax" text="lorem ipsum dolor sit" />
+          <InfoCard icon="instagram" title="instagram" text="lorem ipsum dolor sit" />
           <InfoCard icon="envelope" title="email" text="developernurillo@gmail.com" />
         </div>
       </div>
