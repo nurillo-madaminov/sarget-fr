@@ -56,11 +56,11 @@ export default {
     SwiperSlide,
     FontAwesomeIcon
   },
-  mounted() {
-    this.data.forEach((element) => {
-      console.log(element.title)
-    })
-  }
+  // mounted() {
+  //   this.data.forEach((element) => {
+  //     console.log(element.title)
+  //   })
+  // }
 }
 </script>
 

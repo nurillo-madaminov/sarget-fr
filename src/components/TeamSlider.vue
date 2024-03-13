@@ -30,7 +30,9 @@ export default {
     :slides-offset-after="20"
     :space-between="40"
     :loop="true"
-    :autoplay="false"
+    :autoplay="{
+      delay: 2500,
+    }"
     class="mySwiper"
   >
     <SwiperSlide>

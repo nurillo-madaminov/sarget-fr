@@ -1,11 +1,7 @@
 <script setup>
-import { onMounted } from 'vue'
-onMounted(() => {
-  console.log(121212)
-})
+
 </script>
 <template>
-  <div class="">
-    <h1>{{ $route.params.id }}</h1>
+  <div class="h-screen flex items-center justify-center">
   </div>
 </template>
